@@ -6,8 +6,8 @@ router.route("/")
   .get(movieController.findById)
   .post(movieController.create);
 
-// Matches with "/api/books/:id"
-router.route("/:id")
-  .get(movieController.findById)
+// // Matches with "/api/books/:id"
+// router.route("/:id")
+//   .get(movieController.findById)
 
 module.exports = router;

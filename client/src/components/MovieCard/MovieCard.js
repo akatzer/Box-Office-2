@@ -13,6 +13,15 @@ class MovieCard extends Component {
     }
   };
 
+  // getReviews = title => {
+  //   let title = e.target.value
+  //   API.getReviews({
+  //     title: title
+  //   }
+      
+  //   )
+  // }
+
 
   handleClickUp = (e) => {
     let title = e.target.value;
@@ -43,7 +52,6 @@ class MovieCard extends Component {
   render() {
 
     var { isLoaded, movies } = this.state
-
 
     if (!isLoaded) {
       return <div>Loading...</div>
@@ -97,10 +105,8 @@ class MovieCard extends Component {
                   <Button className="modalButtonUp" value={mov.title} onClick={(e) => this.handleClickUp(e)}><i className="fas fa-thumbs-up"></i></Button>
                   <Button className="modalButtonDown" value={mov.title} onClick={(e) => this.handleClickDown(e)}><i className="fas fa-thumbs-down"></i></Button>
                 </div>
-
               </Modal>
             </div>
-
           ))}
         </div>
       )
