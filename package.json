@@ -1,5 +1,5 @@
 {
-  "name": "mern-starter",
+  "name": "box-office",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -13,20 +13,7 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mmarovich/MERN-starter.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mmarovich/MERN-starter/issues"
-  },
-  "homepage": "https://github.com/mmarovich/MERN-starter#readme",
-  "devDependencies": {
-    "concurrently": "^3.6.1",
-    "nodemon": "^1.18.4"
-  },
+
   "dependencies": {
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
