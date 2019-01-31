@@ -40,9 +40,7 @@ getReviews = () => {
     })
   }
 
-  reviewHandler = () => {
-    let title = this.mov.title
-  }
+
 
   componentDidMount() {
     this.getReviews();
