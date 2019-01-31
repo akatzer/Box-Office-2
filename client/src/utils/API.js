@@ -4,7 +4,7 @@ export default {
 
   // Gets the movie rating with the given id
   getReviews: function(title) {
-    return axios.get("/api/movies");
+    return axios.get("/api/");
   },
   // Saves a review to the database
   saveReview: function(movieReview) {
