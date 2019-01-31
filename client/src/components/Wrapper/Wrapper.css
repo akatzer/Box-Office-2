@@ -11,3 +11,7 @@
     align-content: flex-start;
     overflow: auto;
 }
+
+#searchDiv {
+    width:75%
+}

@@ -3,7 +3,7 @@ const movieController = require("../../controllers/movieController");
 
 // Matches with "/api/books"
 router.route("/")
-  .get(movieController.findById)
+  .get(movieController.find)
   .post(movieController.create);
 
 // // Matches with "/api/books/:id"

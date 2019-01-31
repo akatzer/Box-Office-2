@@ -10,17 +10,18 @@ class MovieCard extends Component {
       movies: [],
       isLoaded: false,
       modal: false,
+      title: "",
+      review: ""
     }
   };
 
-  // getReviews = title => {
-  //   let title = e.target.value
-  //   API.getReviews({
-  //     title: title
-  //   }
-      
-  //   )
-  // }
+getReviews = () => {
+  API.getReviews()
+  .then(res =>
+  
+    console.log(res.data)
+  )
+}
 
 
   handleClickUp = (e) => {
@@ -39,7 +40,12 @@ class MovieCard extends Component {
     })
   }
 
+  reviewHandler = () => {
+    let title = this.mov.title
+  }
+
   componentDidMount() {
+    this.getReviews();
     fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=51743cb9828947ec2fa3ed3b2232d6d7&language=en-US&page=1&USA")
       .then(res => res.json())
       .then(json => {
@@ -60,6 +66,7 @@ class MovieCard extends Component {
 
       return (
         <div id="modalBody">
+        <h2>Most Popular Movies</h2>
 
           {movies.results.map(mov => (
 
