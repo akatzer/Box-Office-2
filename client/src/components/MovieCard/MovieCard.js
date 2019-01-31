@@ -19,7 +19,7 @@ getReviews = () => {
   API.getReviews()
   .then(res =>
   
-    console.log(res.data[0])
+    console.log(res.data)
   )
 }
 
@@ -66,6 +66,7 @@ getReviews = () => {
 
       return (
         <div id="modalBody">
+        <h2>Most Popular Movies</h2>
 
           {movies.results.map(mov => (
 

@@ -1,16 +1,17 @@
 #search {
-    background: grey;
+    background: #1e2931;
+    border-color: #1e2931;
     border-radius: 2px;
     position: sticky;
     top:0;
     justify-content: center;
     height: 300px;
-    width: 400px;
+    width: 100%;
     margin:30px;
     padding: 30px;
-    float:left;    
-    box-shadow: 4px 4px 2px #888888;
-    background-color: #e9ecef;    
+    float:left;
+    color:white;
+    
 }
 #searchDrop{
     margin: 10px;

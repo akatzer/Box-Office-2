@@ -45,7 +45,7 @@ test(res) {
 
   render() {
     return (
-      <div>
+      <div id="searchDiv">
 
       <Card id="search" >
        

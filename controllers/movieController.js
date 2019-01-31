@@ -4,7 +4,7 @@ const db = require("../models");
 module.exports = {
     find: function(req, res) {
     db.Movie
-      .find(req.params.title)
+      .find({title: "Auquaman"})
       .then(boxofficedb => res.json(boxofficedb))
       .catch(err => res.status(422).json(err));
   },
